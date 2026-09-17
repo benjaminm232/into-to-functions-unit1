@@ -16,14 +16,23 @@ t.speed(100)
     t.left(90)
 rectangle(200) """
 
-for i in range(60):
-    t.forward(100)
+def square(x):
+    t.forward(x)
     t.left(90)
-    t.forward(100)
+    t.forward(x)
     t.left(90)
-    t.forward(100)
+    t.forward(x)
     t.left(90)
-    t.forward(100)
+    t.forward(x)
     t.left(90)
-    t.right(5)
+
+
+def doubleSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length)
+        length = length * 2
+        t.right(5)
+doubleSquares(100)
+
 turtle.done()
