@@ -82,7 +82,7 @@ for i in range (60):
     length += 5
     t.right(5) """
 
-""" def star(x):
+def star(x):
     for i in range(5):
         t.forward(x) 
         t.right(144)
@@ -90,6 +90,6 @@ length = 5
 for i in range (60):
     star(length)
     length += 5
-    t.right(5) """
+    t.right(5)
 
 turtle.done()
